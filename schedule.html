@@ -41,6 +41,18 @@
 
   <script src="js/calendar.js"></script>
 
+  <!-- POSTITALL CSS AND JS -->
+  <link rel="stylesheet" href="vendor/postitall/jquery.postitall.css">
+  <link rel="stylesheet" href="vendor/postitall/jquery.minicolors.css">
+  <link rel="stylesheet" href="vendor/postitall/jquery-ui-timepicker-addon.css">
+  <link rel="stylesheet" href="vendor/postitall/jquery-ui.css">
+
+  <script src="vendor/postitall/jquery.js"></script>
+  <script src="vendor/postitall/jquery-ui.min.js"></script>
+  <script src="vendor/postitall/jquery.postitall.js"></script>
+  <script src="vendor/postitall/jquery.minicolors.js"></script>
+  <script src="vendor/postitall/jquery-ui-timepicker-addon.js"></script>
+
 </head>
 
 <body>
@@ -80,7 +92,7 @@
           <i class="far fa-calendar-alt"></i>
           <span style="margin-left: 5px;">Schedule</span></a>
 
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="settings.html">
           <i class="fas fa-cogs"></i>
           <span>Settings</span></a>
       </li>
@@ -103,23 +115,30 @@
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
-            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- DYNAMIC NOTES POSTITALL-->
+            <li class="nav-item">
+              <a class="nav-link">
+                <span class="mr-2 d-lg-inline text-gray-600 small">
+
+                  <button class="btn btn-primary" id="postItAll">Add a Note</button>
+
+                </span>
+              </a>
+            </li>
+
+            <div class="topbar-divider d-sm-block"></div>
 
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
 
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Pemching Kue</span>
-                <img class="img-profile rounded-circle" src="./img/anonymous.png">
+                <span class="mr-2 d-lg-inline text-gray-600 small">Pemching Kue</span>
               </a>
 
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
+
+                <a class="dropdown-item" href="settings.html">
                   <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
                   Settings
                 </a>
@@ -193,5 +212,8 @@
 
 
 </body>
+
+<!-- Javascript for NOTES -->
+<script src="js/postitall.js"></script>
 
 </html>

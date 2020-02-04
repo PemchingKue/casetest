@@ -53,6 +53,25 @@ img {
     border-style: none;
 }
 
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* notes */
+.notes {
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: .25rem;
+    background-color: rgba(0,0,0,.03);
+    color: #858796;
+  }
+
 button {
     border-radius: 0;
 }
